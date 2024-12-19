@@ -8,7 +8,7 @@ export default async function Popular() {
     const popularMovies = results.slice(0, 6)
     return (
         <div>
-            <h2>Le plus populaires</h2>
+            <h2>Les plus populaires</h2>
             <div className={styles.container}>
                 {
                     popularMovies.map(media => <MediaCard key={media.id} media={media}/>)

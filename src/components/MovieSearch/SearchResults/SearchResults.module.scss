@@ -1,0 +1,31 @@
+.resultsContainer {
+  position: absolute;
+  top: 45px;
+  width: 300px;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.15);
+  z-index: 10;
+  background-color: #fff;
+  padding: 5px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  > a {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  > a > img {
+    object-fit: contain;
+  }
+
+  > a > p {
+    color: black;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+}
