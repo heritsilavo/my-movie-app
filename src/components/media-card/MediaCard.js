@@ -2,8 +2,13 @@ import React from "react";
 import Image from "next/image";
 import styles from "./MediaCard.module.scss";
 import Link from "next/link";
+import { getMovieByPath } from "@/utils/movieCilent";
 
-const MediaCard = ({ media }) => {
+const MediaCard = async ({ media }) => {
+  const { genres } = await getMovieByPath("/genre/movie/list");
+  console.log(media);
+  
+
   return (
     <div className={styles.card}>
       <Link href={`/movies/${media.id}`}>

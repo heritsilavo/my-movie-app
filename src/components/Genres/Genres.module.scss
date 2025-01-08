@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  > a {
+    padding: 10px 20px;
+    background: $primaryColor;
+    color: $whiteColor;
+    flex: 0 0 calc(10% - 20px);
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.genreTitle {
+  color: $secondaryColor;
+  font-weight: bold;
+}

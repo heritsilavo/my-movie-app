@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .container {
   display: flex;
   gap: 30px;
@@ -5,4 +7,9 @@
   > div {
     width: 100px;
   }
+}
+
+.popularTitle {
+  color: $secondaryColor;
+  font-weight: bold;
 }
